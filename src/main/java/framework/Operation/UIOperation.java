@@ -20,19 +20,19 @@ import framework.Implementation.CommonWindowSnapshotControls;
 public class UIOperation {
 
 
-    static CommonDriverControls objCommonDriverControls = new CommonDriverControls();
-    static CommonActionControls objCommonActionControls = new CommonActionControls();
-    static CommonAlertControls objCommonAlertControls = new CommonAlertControls();
-    static CommonBrowserControls objCommonBrowserControls = new CommonBrowserControls();
-    static CommonCheckboxControls objCommonCheckboxControls = new CommonCheckboxControls();
-    static CommonDropdownControls objCommonDropdownControls = new CommonDropdownControls();
-    static CommonIFrameControls objCommonIFrameControls = new CommonIFrameControls();
-    static CommonJavaScriptExecuter objCommonJavaScriptExecuter = new CommonJavaScriptExecuter();
-    static CommonMouseControls objCommonMouseControls = new CommonMouseControls();
-    static CommonTextboxControls objCommonTextboxControls = new CommonTextboxControls();
-    static CommonWebElementControls objCommonWebElementControls = new CommonWebElementControls();
-    static CommonWindowHandleControls objCommonWindowHandleControls = new CommonWindowHandleControls();
-    static CommonWindowSnapshotControls objCommonWindowSnapshotControls = new CommonWindowSnapshotControls();
+     CommonDriverControls objCommonDriverControls = new CommonDriverControls();
+     CommonActionControls objCommonActionControls = new CommonActionControls();
+     CommonAlertControls objCommonAlertControls = new CommonAlertControls();
+     CommonBrowserControls objCommonBrowserControls = new CommonBrowserControls();
+     CommonCheckboxControls objCommonCheckboxControls = new CommonCheckboxControls();
+     CommonDropdownControls objCommonDropdownControls = new CommonDropdownControls();
+     CommonIFrameControls objCommonIFrameControls = new CommonIFrameControls();
+     CommonJavaScriptExecuter objCommonJavaScriptExecuter = new CommonJavaScriptExecuter();
+     CommonMouseControls objCommonMouseControls = new CommonMouseControls();
+     CommonTextboxControls objCommonTextboxControls = new CommonTextboxControls();
+     CommonWebElementControls objCommonWebElementControls = new CommonWebElementControls();
+     CommonWindowHandleControls objCommonWindowHandleControls = new CommonWindowHandleControls();
+     CommonWindowSnapshotControls objCommonWindowSnapshotControls = new CommonWindowSnapshotControls();
 
 
     public UIOperation(WebDriver driver) {
@@ -47,7 +47,7 @@ public class UIOperation {
         objCommonBrowserControls.maximizeWindow();
     }
 
-    public static void openUrl(String url) {
+    public void openUrl(String url) {
 
         objCommonBrowserControls.getUrl(url);
     }
