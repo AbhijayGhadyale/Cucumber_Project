@@ -1,0 +1,12 @@
+2020-06-09 13:06:01,996  INFO [main] Log:27 - https://parabank.parasoft.com/parabank/index.htm -- This URL is Lauched in Browser
+2020-06-09 13:06:02,067  INFO [main] Log:27 - Successfully Text is Entered asadmin
+2020-06-09 13:06:02,141  INFO [main] Log:27 - Successfully Text is Entered asadmin
+2020-06-09 13:06:06,803  INFO [main] Log:27 - Successfully Click is done on ElementBy.xpath: //input[@value="Log In"] 
+2020-06-09 13:06:06,830  INFO [main] Log:27 - Successfully text is retrived asThe username and password could not be verified.
+2020-06-09 13:06:09,438  INFO [main] Log:27 - https://parabank.parasoft.com/parabank/index.htm -- This URL is Lauched in Browser
+2020-06-09 13:06:09,496  INFO [main] Log:27 - Successfully Text is Entered asjohn
+2020-06-09 13:06:09,560  INFO [main] Log:27 - Successfully Text is Entered asdemo
+2020-06-09 13:06:13,620  INFO [main] Log:27 - Successfully Click is done on ElementBy.xpath: //input[@value="Log In"] 
+2020-06-09 13:06:13,630  INFO [main] Log:27 - Page Title is received asParaBank | Accounts Overview
+2020-06-09 13:06:16,076  INFO [main] Log:27 - Successfully Click is done on ElementBy.xpath: //a[@href="/parabank/openaccount.htm"]
+2020-06-09 13:06:16,087  INFO [main] Log:27 - Page Title is received asParaBank | Open Account
