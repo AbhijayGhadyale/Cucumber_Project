@@ -7,12 +7,10 @@ import static org.junit.Assert.assertEquals;
 
 public class LoginPageObject extends UIOperation {
 
-
-
 	private static By usernameXpath = By.xpath("//input[@name=\"username\"]");
 	private static By passwordXpath = By.xpath("//input[@name=\"password\"]");
-	private  static By loginButtonXpath = By.xpath("//input[@value=\"Log In\"] ");
-	private static  By loginErrorMessageText=By.xpath("//p[contains(text(),'The username and password could not be verified.')]");
+	private static By loginButtonXpath = By.xpath("//input[@value=\"Log In\"] ");
+	private static By loginErrorMessageText=By.xpath("//p[contains(text(),'The username and password could not be verified.')]");
 
 	public LoginPageObject(WebDriver driver) {
 		super(driver);

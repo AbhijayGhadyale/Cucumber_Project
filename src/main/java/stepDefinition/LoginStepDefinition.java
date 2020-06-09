@@ -7,14 +7,13 @@ import cucumber.api.java.en.When;
 import framework.CommonDriver.CommonDriverControls;
 import pageObjects.LoginPageObject;
 
-public class LoginStepDefinition {
+public class LoginStepDefinition<driver> {
 
-	WebDriver driver;
+	WebDriver driver=CommonDriverControls.getdriver();
 	LoginPageObject objLoginPageObject = new LoginPageObject(driver);
 
 	@Given("^User have opened the Chrome and launched the parabank application$")
-	public void User_have_opened_the_Chrome_and_launched_the_parabank_application() throws Throwable {
-		driver = CommonDriverControls.getdriver();
+	public void User_have_opened_the_Chrome_and_launched_the_parabank_application(){
 		objLoginPageObject.openWebsite("https://parabank.parasoft.com/parabank/index.htm");
 	}
 
@@ -33,7 +32,7 @@ public class LoginStepDefinition {
 	@Then("^User gets the error message$")
 	public void User_gets_the_error_message() throws Throwable {
 		objLoginPageObject.verifyLoginErrorMessageDisplayed();
-		//objLoginPageObject.closeBrowser();
+		
 	}
 	
 	@Given("^User have entered the correct Username and Password$")
@@ -47,7 +46,7 @@ public class LoginStepDefinition {
 	@Then("^User gets the account overview page$")
 	public void User_gets_the_account_overview_page() throws Throwable {
 		objLoginPageObject.verifyUserGetsAccountOverviewPage();
-		objLoginPageObject.closeBrowser();
+//		objLoginPageObject.closeBrowser();
 	}
 	
 }

@@ -18,23 +18,17 @@ public class CommonDriverControls {
 
 	public static WebDriver getdriver(){
 
-		if (driver == null) {
-			DesiredCapabilities capabilities = DesiredCapabilities.chrome();
-			capabilities.setCapability(CapabilityType.ForSeleniumServer.ENSURING_CLEAN_SESSION, true);
-			System.setProperty("webdriver.chrome.driver", ChromeDriverPath);
+        if (driver == null) {
+            DesiredCapabilities capabilities = DesiredCapabilities.chrome();
+            capabilities.setCapability(CapabilityType.ForSeleniumServer.ENSURING_CLEAN_SESSION, true);
+            System.setProperty("webdriver.chrome.driver", ChromeDriverPath);
 
-			driver = new ChromeDriver();
-		} else
+            driver = new ChromeDriver();
 
-		{
-			return driver;
-		}
-
-		return driver;
-	}
-
-	public static void setDriver(WebDriver driver) throws Exception {
-		CommonDriverControls.driver = driver;
-	}
+        } else {
+            return driver;
+        }
+        return driver;
+    }
 
 }
